@@ -82,7 +82,7 @@ public:
         }
         else
         {
-            for (int i = size() - 1; i >= 1; i--)
+            for (int i = size(); i >= 1; i--)
             {
                 List<T>::arr[i] = List<T>::arr[i - 1];
             }
