@@ -102,9 +102,11 @@ public:
            List<T>::arr[List<T>::currentSize++] = element;
             
         }
-        
     }
-    // void removeFromStart(T element);
+    void removeFromStart(T element)
+    {
+    	
+	}
     void removeFromEnd(T element)
     {
         currentSize--;
