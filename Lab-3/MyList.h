@@ -105,10 +105,14 @@ public:
     }
     void removeFromStart(T element)
     {
-    	
+    	for (int i = 0; i < size(); i++)
+        {
+            List<T>::arr[i] = List<T>::arr[i + 1];
+        }
+        List<T>::currentSize--;
 	}
     void removeFromEnd(T element)
     {
-        currentSize--;
+        List<T>::currentSize--;
     }
 };
